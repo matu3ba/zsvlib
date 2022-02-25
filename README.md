@@ -44,12 +44,15 @@ wip.
 no plan for obsolation
 
 ## notes
+#### implementations
+- no realistic data handling https://github.com/geofflangdale/simdcsv
+- extensible, in C and MIT: https://github.com/liquidaty/zsv
+- simple: https://github.com/dbro/csvquote
 
+#### tricks
 https://nullprogram.com/blog/2021/12/04/
 bit hacks for perf
 https://wunkolo.github.io/post/2020/05/pclmulqdq-tricks/
-https://github.com/geofflangdale/simdcsv
-https://github.com/dbro/csvquote
 "Speculative Distributed CSV Data Parsing for Big Data Analytics" by Ge et al.
 https://www.microsoft.com/en-us/research/publication/speculative-distributed-csv-data-parsing-for-big-data-analytics/
 "Instant Loading for Main Memory Databases" by Mühlbauar et al.
