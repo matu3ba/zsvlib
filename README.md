@@ -16,6 +16,14 @@
 - non-goal: interaction besides the csv header generation
 - non-goal(for now): updating offset to peek and write to file positions
 
+## instructions
+```sh
+
+# for benchmarks fetch zsv
+git clone https://github.com/liquidaty/zsv
+# todo
+```
+
 ## planned interfaces
 todo
 
@@ -39,12 +47,25 @@ wip.
 - [ ] perf codegen from header
 - [ ] simd csv parsing
 - [ ] perf simd
+- [ ] float handling
+- [ ] fixed point numbers etc
 
 ## obsoletion plan
 no plan for obsolation
 
 ## notes
-#### implementations
+
+#### encoding examples for csv input without schema files
+"string1\"string2" is 1 continuous string
+number123 is another continuous string
+65535 is a number, which is for simplicity of type Int (arbitrary precision integers) or
+at request u16 (depending on what min and max values of same range are).
+TODO: parsing Int?
+TODO: field delimiter at comptime vs runtime
+TODO: string symbols?
+TODO: Is there "a best default" to choose at comptime? perf?
+
+#### other implementations
 - no realistic data handling https://github.com/geofflangdale/simdcsv
 - extensible, in C and MIT: https://github.com/liquidaty/zsv
 - simple: https://github.com/dbro/csvquote
