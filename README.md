@@ -1,6 +1,13 @@
 # zsvlib
  Zero runtime-allocation csv handling library in Zig
 
+Work is (indefinitely) deferred on this lib until shortcomings of C implementation
+in https://github.com/liquidaty/zsv become evident with motivating use cases.
+I'll probably implement something much simpler inspirated by nix-index
+as project database table.
+However, I'll be busy with a test runner REPL that can handle custom logic
+and allows user to specify dependencies in the near future.
+
 ## use cases
 - use case 1: tool to compute+dump typed description for necessary file sizes
 - use case 2: tool to compute+dump typed description for necessary memory sizes
@@ -33,6 +40,7 @@ wip.
 ## todos
 - [ ] prototype csv parsing
 - [ ] zig build
+- [ ] toString, setString for arbitrary integer sizes
 - [ ] describe how files are encoded (types + file sizes)
 - [ ] describe how memory layouts are encoded (types + file sizes)
 - [ ] describe how memory layouts are read at comptime (types + file sizes)
